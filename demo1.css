@@ -1,0 +1,114 @@
+/*
+* @Author: wyy
+* @Date:   2018-04-02 18:14:38
+* @Email:  2752154874@qq.com
+* @Last Modified by:   wyy
+* @Last Modified time: 2018-04-02 20:45:39
+*/
+
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	padding: 1rem .5rem;
+	font-size: 1.3rem;
+	line-height: 1.2;
+	max-width: 60rem;
+	margin: 0 auto;
+	color: #333;
+}
+
+img {
+	max-width:100%;
+}
+
+.header {
+	text-align: center;
+	border-bottom: 8px double #f9f9f9;
+	margin-bottom: 2rem;
+	padding-bottom: 1rem;
+}
+
+.strap {
+	font-size: 1rem;
+}
+
+.moneyshot {
+	position: relative;
+}
+
+.moneyshotimg {
+	border: 6px solid #e8cfa9;
+	border-radius: 4px;
+}
+
+.logowrapper{
+	display: block;
+}
+
+.imagecaption {
+	font-size: .75rem;
+	position: absolute;
+	bottom: .5rem;
+	right: 1rem;
+}
+
+.introtext {
+	font-size: 1.8rem;
+	font-style: italic;
+}
+
+.methodwrapper li {
+	padding: 4rem 0;
+}
+
+.methodwrapper li:after {
+	content: "✼";
+	display: block;
+	text-align: center;
+	margin: 1rem 0 .5rem 0;
+	color: #eee；
+}
+
+@media screen and (min-width: 50rem) {
+	body {
+		border-left: 4px solid #f9f9f9;
+		border-right: 4px solid #f9f9f9;
+		padding: 1rem 2rem;
+	}
+
+	.introwrapper {
+		display: table;
+		table-layout: fixed;
+		width: 100%;
+	}
+
+	.moneyshot,.introtext {
+		display: table-cell;
+		width: 50%;
+		vertical-align: middle;
+		text-align: center;
+	}
+	.introtext {
+		padding: .5rem;
+		font-size: 2.5rem;
+		text-align: left;
+		position: relative;
+	}
+
+	.ingredients {
+		font-size: .9rem;
+		float: right;
+		padding: 1rem;
+		margin:  0 0  .5rem 1rem;
+		border-radius: 3px;
+		background-color: #ffffdf;
+		border: 2px solid #e8cfa9;
+	}
+
+	.ingredients h3 {
+		margin: 0;
+	}
+}

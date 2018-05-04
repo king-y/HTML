@@ -1,0 +1,39 @@
+/*
+* @Author: wyy
+* @Date:   2018-04-01 16:51:45
+* @Email:  2752154874@qq.com
+* @Last Modified by:   wyy
+* @Last Modified time: 2018-04-01 17:33:38
+*/
+
+
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/*nav*/
+
+ul {
+	list-style-type: none;
+	overflow: hidden;
+}
+
+li {
+	float: left;
+}
+
+a:link,a:visited {
+	display: block;
+	color:#abc00d;
+	background-color:#decd6166;
+	width:120px;
+	text-align: center;
+	text-decoration: none;
+	padding: 4px;
+}
+
+a:hover,a:active {
+	background-color:#ebe77ef5;
+}

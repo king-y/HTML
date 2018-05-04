@@ -1,0 +1,80 @@
+/*
+* @Author: wyy
+* @Date:   2018-04-03 18:16:09
+* @Email:  2752154874@qq.com
+* @Last Modified by:   wyy
+* @Last Modified time: 2018-04-03 21:02:53
+*/
+
+
+ body {
+ 	padding: 1rem .5rem;
+ 	font-size: 1.3rem;
+ 	line-height: 1.2;
+ 	max-width: 60rem;
+ 	margin: 0 auto;
+ 	background:url(1.jpg) 0 0 no-repeat;
+ 	/*设置背景图片大小*/
+ 	-webkit-background-size: 110%;
+ 	background-size: 140%;
+ 	/*设置背景图片不随页面滚动*/
+ 	background-attachment:fixed;
+ }
+
+/*navigate*/
+
+ ul {
+ 	list-style-type: none;
+ 	overflow: hidden;
+ }
+
+ li {
+ 	float: left;
+ }
+
+ a:link,a:visited{
+ 	width: 10rem;
+ 	color: #abc00d;
+ 	padding: 3rem;
+ 	text-align: center;
+ 	
+ 
+ }
+ a:hover,a:active {
+ 		background-color: #decd6166;
+ }
+
+/*content*/
+.big {
+	margin-top: 10rem;
+	width: 70rem;
+	height: auto;
+}
+
+.small {
+ 	float: left;
+ 	width: 20rem;
+ }
+
+ .small img {
+	max-width: 50%;
+	padding: .1rem 5rem;
+ }
+
+.small p {
+	font-size: .9rem;
+	text-align: center;
+	color: #cc33cc9e;
+	padding: .5rem;
+}
+
+.list {
+	margin:  3rem 4rem;
+	font-size: 1rem;
+}
+
+.copyright {
+	font-size: .5rem;
+	text-align: center;
+	color: #a4a8a4;
+}
