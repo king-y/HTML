@@ -1,0 +1,163 @@
+<!--
+*
+*
+* @Author: wyy
+* @Date:   2018-06-27 14:35:46
+* @Email:  2752154874@qq.com
+* @Last Modified by:   wyy
+* @Last Modified time: 2018-06-27 16:59:46
+*
+*
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- 设置字符编码 -->
+	<meta charset="UTF-8">
+	<!-- 设置关键词 -->
+	<meta name="keywords" content="head头标签,关键词">
+	<!-- 设置网页描述 -->
+	<meta name="description" content="这是第一遍代码,包含head头标签,表单属性,小分帧以及css导入/语法/选择器内容">
+	<!-- 网页标题 -->
+	<title>html-0627-1 第一遍练习</title>
+	<!-- 导入外部css -->
+	<link rel="stylesheet" href="../test.css">
+	<!-- 导入外部js -->
+	<!-- <script src="../ttt.js"></script> -->
+	<!-- 导入icon -->
+	<link rel="icon" href="../smart.ico">
+	<!-- 重定向 -->
+	<!-- <meta http-equiv="refresh" content="1;"> -->
+	<!-- 重定向到百度 -->
+	<!-- <meta http-equiv="refresh" content="1;url=http://www.baidu.com"> -->
+	<style>
+		i {
+			font-size: 19px;
+			color:green;
+		}
+	</style>
+</head>
+<body>
+		<!-- 表单属性 -->
+			<h1>表单属性</h1>
+<hr><br><br>
+	<form action="html-0627-1.html" enctype="multipart/form-data" method="post">
+		账号:
+			<input type="text" maxlength="6" name="nickName" placeholder="用户名小于六个字符"required autofocus><br><br>
+		密码:
+			<input type="password" minlength="6" name="pwd" placeholder="密码最低六个字符"><br><br>
+		邮箱:
+			<input type="email"  name="email" placeholder="请输入您的邮箱" autocomplete="no"><br><br>
+		性别:
+			<label><input type="radio" name="sex" value="1" checked>男</label>
+			<label><input type="radio" name="sex" value="2">女</label><br><br>
+		感觉:
+			<label><input type="checkbox" name="circle[]" value="1">帅的一逼</input></label>
+			<label><input type="checkbox" name="circle[]" value="2">吊炸天帅</input></label>
+			<label><input type="checkbox" name="circle[]" value="3">宇宙大帅</input></label>
+			<label><input type="checkbox" name="circle[]" value="4" readonly>我就是帅</input></label>
+			<label><input type="checkbox" name="circle[]" value="5" disabled>帅破苍穹</input></label>
+			<br><br>
+		头像:
+			<input type="file" name="icon" multiple><br><br>
+		去过城市:
+			<select name="city" multiple>
+				<option value="1">上海</option>
+				<option value="2">北京</option>
+				<option value="3">澳门</option>
+				<option value="4">香港</option>
+				<option value="5">天津</option>
+				<option value="6">四川</option>
+			</select><br><br>
+		照片上传:
+			<input type="file" name="pic" multiple><br><br>
+		我是隐身娃:
+			<input type="hidden" name="hid" value="我是隐身娃"><br><br>
+			<input type="submit">
+	</form>
+	<br>
+<hr>
+		<!-- 小分帧 -->
+		<h1>小分帧</h1>
+	<hr>
+	<br>
+	<a href="../vip.html" target="content">个人资料</a><br>
+	<a href="../pwd.html" target="content">修改密码</a><br>
+	<iframe name="content" frameborder="1" width="50%" height="200px" scrolling="no"></iframe>
+	<br>
+	<hr>
+	<!-- CSS导入方式 -->
+		<h1>CSS导入方式</h1>
+	<hr>
+		<table border="1" cellspacing="0" cellpadding="10" >
+			<tr>
+				<td>外链式--->通过link导入css文件[正规项目--推荐]</td>
+			</tr>
+			<tr>
+				<td>内联式--->直接开始标签内,通过style赋予css</td>
+			</tr>
+			<tr>
+				<td>内嵌式--->通过head里的style标签赋予css[测试--常用]</td>
+			</tr>
+		</table>
+		<br>
+		<p style="color:gray">这是一个悲伤的故事,所以是灰色的字.而且使用的是内联式</p>
+		<br>
+		<i>我使用的是内嵌式</i>
+		<br><br>
+		<a href="#">我使用的是外链式</a>
+		<br><br>
+
+		<!-- CSS语法 -->
+		<h1>CSS语法</h1>
+		<hr>
+		<br><br>
+		<table border="1" cellspacing="0" cellpadding="10">
+			<tr>
+			<td>css格式</td>
+			<td>选择器{属性名:属性值}</td>
+			</tr>
+			<tr>
+				<td>css注释</td>
+				<td>/*注释内容*/</td>
+			</tr>
+			<tr>
+				<td>css属性名</td>
+				<td>不区分大小写</td>
+			</tr>
+			<tr>
+				<td rowspan="4">html四大通用属性</td>
+				<td>style  ----   赋予标签样式</td>
+			</tr>
+			<tr>
+				<td>name   ----   赋予标签名字</td>
+			</tr>
+			<tr>
+				<td>class ----   多个,区分大小写</td>
+			</tr>
+			<tr>
+				<td>id  ----   唯一,区分大小写</td>
+			</tr>
+		</table>
+
+		<!-- 选择器 -->
+		<h1>选择器</h1>
+		<hr>
+		<br><br>
+		<p class="fz bg" id="fc">123木头人不许说话不许动</p>
+		<p class="fz">123木头人不许说话不许动</p>
+		<br>
+		<ul>
+			<li>这是列表1</li>
+			<li>这是列表2</li>
+			<li>这是列表3</li>
+			<li>这是列表4</li>
+			<li>这是列表5</li>
+			<li>这是列表6</li>
+			<li>这是列表7</li>
+		</ul>
+	
+</body>
+</html>

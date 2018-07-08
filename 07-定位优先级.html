@@ -1,0 +1,54 @@
+<!--
+*
+*
+* @Author: wyy
+* @Date:   2018-07-02 17:30:24
+* @Email:  2752154874@qq.com
+* @Last Modified by:   wyy
+* @Last Modified time: 2018-07-02 17:34:43
+*
+*
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>定位优先级</title>
+	<style>
+		
+		div {
+			width: 100px;
+			height: 100px;
+			position: absolute;
+		}
+		.box1 {
+			left: 100px;
+			top: 100px;
+			background-color: #eac;
+			z-index:55;
+		}
+		.box2 {
+			left: 120px;
+			top: 120px;
+			background-color: #cae;
+			z-index:45;
+		}
+		.box3{
+			left: 140px;
+			top: 140px;
+			background-color: #eac;
+			z-index:65;
+		}
+	</style>
+</head>
+<body>
+	<h1>定位优先级</h1>
+	<hr>
+	<div class="box1"></div>
+	<div class="box2"></div>
+	<div class="box3"></div>
+	<div class="box4"></div>
+</body>
+</html>

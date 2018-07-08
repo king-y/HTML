@@ -1,0 +1,304 @@
+<!--
+*
+*
+* @Author: wyy
+* @Date:   2018-06-26 15:02:34
+* @Email:  2752154874@qq.com
+* @Last Modified by:   wyy
+* @Last Modified time: 2018-06-26 21:31:41
+*
+*
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>html-06-26-2-1 表单和表格部分第一遍</title>
+	<style>
+		img {
+			width:10%;
+		}
+	</style>
+</head>
+<body>
+	<!-- html table tag start -->
+	<h1>表格</h1>
+
+	<!-- table tag table start -->
+		<table border="1" cellspacing="0" cellpadding="10">
+			<tr>
+				<th rowspan="5">标签</th>
+				<td>table--->表格声明</td>
+			</tr>
+			<tr>
+				<td>caption--->表格标题</td>
+			</tr>
+			<tr>
+				<td>tr--->表行</td>
+			</tr>
+			<tr>
+				<td>th--->表头</td>
+			</tr>
+			<tr>
+				<td>td--->普通单元格</td>
+			</tr>
+			<tr>
+				<th rowspan="11">属性</th>
+				<td>border--->边框</td>
+			</tr>
+			<tr>
+				<td>width--->宽</td>
+			</tr>
+			<tr>
+				<td>height--->高</td>
+			</tr>
+			<tr>
+				<td>cellspacing--->外边距 单元格和单元格之间的距离</td>
+			</tr>
+			<tr>
+				<td>cellpadding--->内边距 单元格和内容之间的距离</td>
+			</tr>
+			<tr>
+				<td>align--->水平对齐方式 left right center</td>
+			</tr>
+			<tr>
+				<td>valign--->垂直对齐方式 top bottom middle</td>
+			</tr>
+			<tr>
+				<td>bgcolor--->背景颜色</td>
+			</tr>
+			<tr>
+				<td>background--->背景图片</td>
+			</tr>
+			<tr>
+				<td>rowspan--->行合并</td>
+			</tr>
+			<tr>
+				<td>colspan--->列合并</td>
+			</tr>
+		</table>
+	<!-- table tag table End -->
+
+	<!-- class table start-->
+		<table border="1" cellpadding="10" cellspacing="0" background="../1.png">
+			<caption>
+				<h2>醉醉醉醉课表</h2>
+			</caption>
+				<tr>
+					<th colspan="2"></th>
+					<th>星期1</th>
+					<th>星期2</th>
+					<th>星期3</th>
+					<th>星期4</th>
+					<th>星期5</th>
+					<th>星期6</th>
+					<th>星期7</th>
+				</tr>
+				<tr>
+					<td rowspan="4">上午</td>
+					<td>1</td>
+					<td>语文</td>
+					<td>数学</td>
+					<td>历史</td>
+					<td>政治</td>
+					<td>小学</td>
+					<td>历史</td>
+					<td>法学</td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td>法学</td>
+					<td>工学</td>
+					<td>正史</td>
+					<td>政治</td>
+					<td>地理</td>
+					<td>中学</td>
+					<td>毛概</td>
+				</tr>
+				<tr>
+					<td>3</td>
+					<td>政治</td>
+					<td>数学</td>
+					<td>历史</td>
+					<td>法治</td>
+					<td>语文</td>
+					<td>数学</td>
+					<td>法学</td>
+				</tr>
+				<tr>
+					<td>4</td>
+					<td>历史</td>
+					<td>数学</td>
+					<td>历史</td>
+					<td>政治</td>
+					<td>语文</td>
+					<td>数学</td>
+					<td>历史</td>
+				</tr>
+				<tr>
+					<td  align="center" colspan="9">午休</td>
+				</tr>
+				<tr>
+					<td rowspan="3">下午</td>
+					<td>5</td>
+					<td>法学</td>
+					<td>工学</td>
+					<td>正史</td>
+					<td>政治</td>
+					<td>地理</td>
+					<td>中学</td>
+					<td>毛概</td>
+				</tr>
+				<tr>
+					<td>6</td>
+					<td>历史</td>
+					<td>数学</td>
+					<td>历史</td>
+					<td>政治</td>
+					<td>语文</td>
+					<td>数学</td>
+					<td>历史</td>
+				</tr>
+				<tr>
+					<td>7</td>
+					<td>政治</td>
+					<td>数学</td>
+					<td>历史</td>
+					<td>法治</td>
+					<td>语文</td>
+					<td>数学</td>
+					<td>法学</td>
+				</tr>
+				<tr>
+					<td colspan="9" align="center">晚自习</td>
+				</tr>
+		</table>
+	<!-- class table end -->
+
+	<!-- html table tag end -->
+	<hr>
+	<!-- html form tag start -->
+	<h1>表单</h1>
+
+	<!-- form tag table start -->
+	<table border="1" cellpadding="10" cellspacing="0">
+		<tr>
+			<th rowspan="8">标签</th>
+			<td>form--->表单声明</td>
+		</tr>
+		<tr>
+			<td>action--->将表单数据传递给某个服务器,不写值,默认为当前文件</td>
+		</tr>
+		<tr>
+			<td><a href="#method">method--->以什么方式传递给服务器</a></td>
+		</tr>
+		<tr>
+			<td>enctype--->文件类型专属,enctype = multipart/form-data</td>
+		</tr>
+		<tr>
+			<td>select--->下拉菜单,option--->下拉子菜单,selected 属性设置默认显示的值</td>
+		</tr>
+		<tr>
+			<td>textarea--->多文本域,rows行,cols列,默认值正文内容</td>
+		</tr>
+		<tr>
+			<td>button---->按钮,默认值正文内容</td>
+		</tr>
+		<tr>
+			<td><a href="#input">input--->表单标签</a></td>
+		</tr>
+		<tr id="method">
+			<td>
+				get--->默认<br>
+				明文传输<br>
+				安全性低<br>
+				速度相对快<br>
+				传输长度<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;在http协议无限实际根据浏览器大约在2kb以内<br>
+				适合查/搜索<br>
+				<p>超链接传参</p>
+			</td>
+			<td>post<br>
+			密文传输<br>
+			安全性高<br>
+			相对速度较慢<br>
+			传输长度<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;在HTTP协议上无限制,实际根据服务器性能<br>
+			适合增删改
+			</td>
+		</tr>
+		<tr id="input">
+			<td colspan="2">name--->当前表单取名,必须取,不取名字服务器接收不到<br>
+				value--->给当前表单赋予默认值<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;可手动输入的表单--->value值可写可不写<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;
+				不可手动输入的表单--->value值必须写<br>
+				type--->指定当前表单类型<br>
+				&nbsp;&nbsp;&nbsp;text--->文本域(默认)<br>	
+				&nbsp;&nbsp;&nbsp;password--->密码域<br>
+				&nbsp;&nbsp;&nbsp;radio--->单选[两者之选其一,name名必须一致]<br>
+				&nbsp;&nbsp;&nbsp;checkbox--->复选[name[]才能将所有选择传给服务器] <br>
+				&nbsp;&nbsp;&nbsp;file--->文件上传<br>
+				&nbsp;&nbsp;&nbsp;email--->邮箱<br>
+				&nbsp;&nbsp;&nbsp;number--->数字(整数) <br>
+				&nbsp;&nbsp;&nbsp;url--->网址 <br>
+				&nbsp;&nbsp;&nbsp;search--->搜索 <br>
+				&nbsp;&nbsp;&nbsp;date--->日期 <br>
+				&nbsp;&nbsp;&nbsp;submit--->提交<br>
+				&nbsp;&nbsp;&nbsp;button--->自定义按钮配合js使用<br>
+			</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					文件上传的必备要素<br>
+					1.file表单的name名<br>
+					2.form表单method=post <br>
+					3.form表单enctype = multipart/form-data
+				</td>
+			</tr>
+	</table>
+	<!-- form tag table end -->
+		<form method="post" enctype="multipart/form-data">
+			地址:
+				<select name="address">
+					<option value="安徽">安徽</option>
+					<option value="上海">上海</option>
+					<option value="宁波">宁波</option>
+					<option value="南京" selected>南京</option>
+				</select>
+				<br>
+			评论:
+				<textarea name="critical"  cols="30" rows="10">
+					请在此评论
+				</textarea><br>
+			账号:<input type="text" name="phone"><br>
+			密码:<input type="password" name="pwd"><br>
+			头像:<input type="file" name="ico"><br>
+			性别: <br>
+				<label><input type="radio" name="sex" value="man">男</input></label><br>
+				<label><input type="radio" name="sex" value="woman">女</input></label><br>
+			爱好: <br>
+				<label><input type="checkbox" name="hobby[]" value="1">爱好1</input></label><br>
+				<label><input type="checkbox" name="hobby[]" value="2">爱好2</input></label><br>
+				<label><input type="checkbox" name="hobby[]" value="3">爱好3</input></label><br>
+				<label><input type="checkbox" name="hobby[]" value="4">爱好4</input></label><br>
+				<label><input type="checkbox" name="hobby[]" value="5">爱好5</input></label><br>
+			邮箱:
+				<input type="email" name="email"><br>
+			单价:
+				<input type="number" name="price"><br>
+			网址:
+				<input type="url" name="url"><br>
+			搜索:
+				<input type="search" name="search"><br>
+			生日:
+				<input type="date" name="date"><br>
+				<button>注册</button>
+				<input type="submit" value="提交">
+				<input type="button" value="自定义按钮">
+
+
+		</form>
+	<!-- html form tag end -->
+</body>
+</html>

@@ -1,0 +1,208 @@
+<!--
+*
+*
+* @Author: wyy
+* @Date:   2018-06-25 13:26:52
+* @Email:  2752154874@qq.com
+* @Last Modified by:   wyy
+* @Last Modified time: 2018-06-25 15:03:43
+*
+*
+-->
+
+
+<!-- 
+	0.
+	html文档声明
+	html5声明:<!doctype html>
+	html4声明:<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+ -->
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- 1.设置字符编码为万国码 -->
+	<meta charset="UTF-8">
+	<!-- 2.网页标题 -->
+	<title>Html-0625 第一遍代码</title>
+</head>
+<body name="top">
+	<!-- html basic langue Start -->
+
+		<h1>html基本语法</h1>
+			<!-- 3.全局架构标签 -->
+			<p>html:告诉浏览器从该标签开始写html代码</p>
+			<p>head:负责设置编码,标题,关键字,网页描述,导入外部css和js等</p>
+			<p>body:负责显示内容</p>
+			<p>title:网页标题</p>
+			<!--
+				 4.注释 
+					定义:
+						注释是对代码的一种描述,注释内容不会显示在网页中
+
+					作用:
+						提升团队的效率
+						快速恢复记忆
+
+					注意:
+						注释不可嵌套使用
+
+				5.浏览器特性
+					任何回车和多个连续空格要么不解析,要么解析为一个空格.
+					利用Tab键,对代码排版.
+
+				6.标签
+					单标签:<开始标签>
+					双标签:<开始标签></结束标签>
+
+				7.属性
+					位置:只出现在开始标签中
+					格式:属性名="属性值"
+					注意:每个属性之间最少间隔一个空格,属性名和标签名之间至少间隔一个空格.
+
+				8.html标签和属性不区分大小写
+			-->
+
+	<!-- html basic langue End -->
+<hr>
+	<!-- html text tag Start -->
+
+		<h1>文本标签</h1>
+
+		<!-- 段落标签 -->
+		<!-- 自带上下间距和换行 -->
+		<p>这是一个段落标签</p>
+
+		<!-- 换行标签 -->
+		<!-- 换行 -->
+		这是一个换行标签<br>
+
+		<!-- 标题标签 -->
+		<!-- 标题标签可以进行SEO优化但是h1标签一个页面只能使用一次 -->
+		<h1>这是标题标签1</h1>  
+		<h2>这是标题标签2</h2>
+		<h3>这是标题标签3</h3>
+		<h4>这是标题标签4</h4>
+		<h5>这是标题标签5</h5>
+		<h6>这是标题标签6</h6>
+
+		<!-- 样式标签 -->
+		<!-- 负责显示效果 -->
+		<del>这是删除线标签</del><br>
+		<b>这是加粗标签</b><br>
+		<i>这是倾斜标签</i><br>
+		<u>这是下划线标签</u><br>
+
+		<!-- 语义化标签 -->
+		<!-- 具备特殊意义的标签 -->
+		<strong>这是加粗强调标签更深</strong><br>
+		<em>这是倾斜强调标签较浅</em><br>
+
+		<!-- 上标下标标签 -->
+			Co<sub>2</sub><i>这是下表标签</i><br>
+			x<sup>2</sup><i>这是上标标签</i><br>
+
+		<!-- 原样输出标签-->
+		<pre>
+			静夜思
+				李白
+
+		床前明月光,疑是地上霜.
+
+		举头望明月.低头思故乡.
+		</pre>
+	<!-- html text tag End -->
+<hr>
+	<!-- html list tag Start -->
+
+		<h1>列表标签</h1>
+
+		<!-- 无序列表 -->
+			<ul>
+				<li>这是无序列表</li>
+				<li>这是无序列表</li>
+				<li>这是无序列表</li>
+				<li>这是无序列表</li>
+			</ul>
+
+		<!-- 有序列表 -->
+			<ol>
+				<li>这是有序列表</li>
+				<li>这是有序列表</li>
+				<li>这是有序列表</li>
+				<li>这是有序列表</li>
+			</ol>
+
+		<!-- 定义列表 -->
+			<dl>
+				<dt>这是自定义列表标题</dt>
+					<dd>这是内容</dd>
+					<dd>这是内容</dd>
+					<dd>这是内容</dd>
+					<dd>这是内容</dd>
+			</dl>
+
+	<!-- html list tag End -->
+<hr>
+	<!-- html symbol tag Start -->
+
+		<h1>实体符号</h1>
+
+		<!--小于-->
+		 <p>这是&lt;符号</p>
+
+		<!-- 大于 -->
+		<p>这是&gt;符号</p>
+
+		<!-- 空格 -->
+		<p>这是&nbsp;&nbsp;&nbsp;&nbsp;符号</p>
+
+		<!-- 版权 -->
+		<p>这是&copy;符号</p>
+
+		<!-- 人民币 -->
+		<p>这是&yen;符号</p>
+
+	<!-- html symbol tag End -->
+<hr>
+	<!-- html link tag Start -->
+
+		<h1>超链接</h1>
+
+		<!-- 
+		标签名:a
+		属性名:href //链接地址
+			  target 
+			  		_self   //自身窗口打开
+			  		_blank  //新窗口打开
+			  		_top    //顶部窗口打开
+			  		name	//自定义窗口打开
+		 -->
+		 <br>
+		 <a href="www.baidu.com">这是未加协议的网址链接</a>
+		 <br>
+		 <a href="http://www.baidu.com">这是加协议的网址链接</a>
+		 <br>
+		 <a href="http://www.baidu.com" target="_blank">这是加协议并且在新窗口打开的网址链接</a>
+		 <br>
+
+		 <!-- 
+
+		 网址
+
+		 	任何网址的本质就是找文件
+
+		 	1.基本组成: 协议://域名 
+		 				http://www.baidu.com
+
+		 	2.完整组成: 协议://域名:端口/路径(文件或目录)?参数#锚点
+		 				http://www.baidu.com/wenku/xxx.doc?time=xxxx#xx
+
+
+
+		  -->
+		  <a href="html-0625-1.html#top">返回顶部</a>
+
+	<!-- html link tag End -->
+<hr>
+</body>
+</html>

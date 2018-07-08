@@ -1,0 +1,279 @@
+<!--
+*
+*
+* @Author: wyy
+* @Date:   2018-06-29 13:04:48
+* @Email:  2752154874@qq.com
+* @Last Modified by:   wyy
+* @Last Modified time: 2018-06-29 16:39:53
+*
+*
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>html-0629-1 第一遍代码</title>
+	<meta name="keywords" cntent="边框,文本,溢出,盒子阴影,列表,鼠标,字体">
+	<meta name="description" content="这是一个有关于css内容的网页,里面有css的边框,文本,溢出,盒子阴影,列表,鼠标,字体等">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="../iconfont/iconfont.css">
+</head>
+<body>
+	
+
+<!-- css border start -->
+
+		<h1>边框</h1>
+	<hr>
+	<pre>
+		1.单边框:
+
+			border-方向-属性
+
+			方向:
+
+				-top
+
+				-bottom
+
+				-left
+
+				-right
+
+			属性:
+
+				width		粗细			默认值
+
+				color		颜色			默认值
+
+				style 		风格			必须写
+
+
+			简写:
+
+				border-方向: [ width | color ] | style
+
+
+			2.四边框:
+
+				border-属性
+
+				简写:
+
+					border: [ width | color ] | style
+
+			3.圆角:
+
+					border-radius: px | %
+
+			4.边框合并:
+
+					border-collapse: collapse;
+
+			5.轮廓
+
+					outline:none;
+
+							语法和border相同
+
+
+	</pre>
+
+		<div class="box1"></div>
+		<div class="box2"></div>
+		<div class="box3"></div>
+
+
+		<table border="1" cellpadding="10" width="400px"  >
+			<caption><h2>边框合并</h2></caption>
+			<tr>
+				<td>我</td>
+				<td>爱</td>
+				<td>你</td>
+			</tr>
+			<tr>
+				<td>我</td>
+				<td>爱</td>
+				<td>你</td>
+			</tr>
+		</table>
+		<br>
+		<input type="text">
+
+
+	<hr>
+
+
+ 	<!-- css border end -->
+
+
+
+<!-- css box-shadow start -->
+
+		<h1>盒子阴影</h1>
+	<hr>
+	<pre>
+		box-shadow: n1 n2 n3 n4 n5 n6
+
+			n1 	水平位移
+			n2 	垂直位移
+			n3 	模糊度		不可为负数
+			n4 	阴影面积	可以为负数,省略,默认值,原大小
+			n5 	阴影颜色
+			n5 	内阴影		inset
+	</pre>
+
+		<div class="box4"></div>
+
+	<hr>
+
+
+	<!-- css box-shadow end -->
+
+
+<!-- css list start -->
+
+		<h1>列表</h1>
+	<hr>
+	<pre>
+		list-style:none;		取消项目符号
+	</pre>
+
+		<ul>
+			<li>我是列表</li>
+			<li>我是列表</li>
+			<li>我是列表</li>
+			<li>我是列表</li>
+			<li>我是列表</li>
+		</ul>
+	<hr>
+
+
+	<!-- css list end -->
+
+
+<!-- css text start -->
+
+		<h1>文本</h1>
+	<hr>
+	<pre>
+		text-indent			首行缩进
+
+			-decoration		文本修饰
+
+							none		没有下划线
+
+							underline		下划线
+
+							overline		上划线
+
+							line-through    删除线
+
+			-shadow  n1 n2 n3 n4			文字阴影
+
+					n1		水平位移
+
+					n2		垂直位移
+
+					n3		模糊度			不能为负
+
+					n4		阴影颜色
+
+			-align			水平方式			left	right		center
+
+			-overflow		ellipsis		单行文本隐藏溢出时以省略号代替
+									多配合white-space使用
+
+			vertical-align	垂直对齐方式		top		bottom	middle
+
+			display:table-cell;			将当前元素转化为td单元格
+	</pre>
+
+			<a href="#">我要删除自己</a>
+			<div class="box-t1">地宫内外,皆设置好机关,关闭宫门.</div>
+			评论:<textarea name="textName" cols="30" rows="10"></textarea>
+			<div class="box-t3">地宫内外,皆地宫内外,皆地宫内外,皆地宫内外,皆</div>
+			<div class="box-t4">地宫内外,皆地宫内外,皆地宫内外,皆地宫内外,皆</div>
+			<div class="box-t5">地宫内外,皆地宫内外,皆地宫内外,皆地宫内外,皆</div>
+
+	<hr>
+
+	<!-- css text end -->
+
+
+
+<!-- css overflow  start -->
+
+		<h1>溢出</h1>
+	<hr>
+	<pre>
+		overflow			hidden		将超出范围之外的内容隐藏
+						visiable		将超出范围之外的内容显示
+						auto			将超出范围之外的内容通过滚动条显示/隐藏
+
+		overflow-x:  hidden	| visible | auto
+		overflow-y:  hidden | visible | auto
+	</pre>
+
+		<div class="box-o">你听我说,你给我说,我不知道你再说,你说你说你说,说来说去,你也说不清楚,你快说,你快说,我最亲爱的你,婷儿你别盛大开始登记卡接收到收到卡速度看撒即可打开啦就是考虑到</div>
+		<div class="box-o1">你听我说,你给我说,我不知道你再说,你说你说你说,说来说去,你也说不清楚,你快说,你快说,我最亲爱的你,婷儿你别盛大开始登记卡接收到收到卡速度看撒即可打开啦就是考虑到</div>
+		<div class="box-o2">你听我说,你给我说,我不知道你再说,你说你说你说,说来说去,你也说不清楚,你快说,你快说,我最亲爱的你,婷儿你别盛大开始登记卡接收到收到卡速度看撒即可打开啦就是考虑到</div>
+
+
+	<hr>
+
+	<!-- css overflow end -->
+
+
+
+<!-- css cursor start -->
+
+		<h1>鼠标</h1>
+	<hr>
+	<pre>
+		cursor		pointer		手掌	(常用)
+
+					default		默认箭头
+
+					text			文本
+
+					move		移动
+
+					none		隐藏
+
+					wait			等待
+	</pre>
+
+			<div class="box-c"></div>
+
+	<hr>
+
+	<!-- css cursor end -->
+
+
+<!-- css iconfont start -->
+
+
+		<h1>字体图标</h1>
+	<hr>
+	<pre>
+		 @font-face{
+
+		 	font-family:"自定义家族名";
+		 	src:url("字体文件地址");
+		}
+	</pre>
+
+			<p>我是自己css定的-----&#xe643;</p>
+
+			<i class="iconfont">我是外部引用的--------&#xe66f;</i>
+
+	<hr>
+
+	<!-- css icon font end -->
+
+</body>
+</html>

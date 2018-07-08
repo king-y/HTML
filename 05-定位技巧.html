@@ -1,0 +1,176 @@
+<!--
+*
+*
+* @Author: wyy
+* @Date:   2018-07-02 18:10:57
+* @Email:  2752154874@qq.com
+* @Last Modified by:   wyy
+* @Last Modified time: 2018-07-02 19:17:14
+*
+*
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>定位技巧</title>
+	<style>
+		body,ul{
+			margin: 0;
+			padding: 0;
+		}
+		li {
+			list-style: none;
+
+		}
+		a {
+			text-decoration:none;
+		}
+		.banner {
+			width: 1226px;
+			height: 460px;
+			margin: 0 auto;
+			position: relative;
+		}
+		.menu {
+			width: 234px;
+			height: 460px;
+			background: rgba(0,0,0,.3);
+			position: absolute;
+			top:0;
+			left:0;
+		}
+		.menu li {
+			margin:10px 15px;
+			padding:10px;
+		}
+		a {
+			color:#fff;
+		}
+		a:hover {
+			color:#FFAA07FF;
+		}
+		.second-menu {
+			width: 992px;
+			height: 460px;
+			background: #fff;
+			position: absolute;
+			right: 0;
+			top:0;
+			display:none;
+			z-index:9999;
+		}
+		.second-menu li {
+			float: left;
+			margin: 57px;
+
+		}
+		.left {
+			width: 40px;
+			height: 70px;
+			background:url("./icon-slides.png") 83px 0px;
+			position: absolute;
+			left:234px;
+			top:42%;
+		}
+		.left:hover {
+			background-position: 0px 0px;
+		}
+		.right {
+			width: 40px;
+			height: 70px;
+			background:url("./icon-slides.png") 40px 0px;
+			position: absolute;
+			right:0px;
+			top:42%;
+		}
+		.right:hover {
+			background-position: -43px 0px;
+		}
+		.list {
+			width: 145px;
+			height: 20px;
+			position: absolute;
+			right: 30px;
+			bottom: 15px;
+		}
+		.list-btn {
+			width: 6px;
+			height: 6px;
+			background: rgba(0,0,0,0.4);
+			border-radius:100%;
+			float: left;
+			margin-right:5px;
+			border:2px solid rgba(255,255,255,0.3);
+		}
+	</style>
+	<script>
+		window.onload = function(){
+
+			var oMeu = document.getElementById("meu");
+
+			var oSemu = document.getElementById("semu");
+			oMeu.onmouseover = function(){
+				oSemu.style.display = "block";
+			}
+			oMeu.onmouseout = function (){
+				oSemu.style.display = "none";
+			}
+
+		}
+	</script>
+</head>
+<body>
+	<h1>定位技巧</h1>
+	<hr>
+	<div class="banner">
+		<img src="./banner.jpg" alt="banner" width="1226" height="460">
+		<ul class="menu"  id="meu">
+			<li><a href="#">手机 电话卡</a></li>
+			<li><a href="#">手机 电话卡</a></li>
+			<li><a href="#">手机 电话卡</a></li>
+			<li><a href="#">手机 电话卡</a></li>
+			<li><a href="#">手机 电话卡</a></li>
+			<li><a href="#">手机 电话卡</a></li>
+			<li><a href="#">手机 电话卡</a></li>
+			<li><a href="#">手机 电话卡</a></li>
+			<li><a href="#">手机 电话卡</a></li>
+			<li><a href="#">手机 电话卡</a></li>
+		</ul>
+		<div class="second-menu" id="semu">
+			<ul>
+				<li>手机</li>
+				<li>手机</li>
+				<li>手机</li>
+				<li>手机</li>
+				<li>手机</li>
+				<li>手机</li>
+				<li>手机</li>
+				<li>手机</li>
+				<li>手机</li>
+				<li>手机</li>
+				<li>手机</li>
+				<li>手机</li>
+				<li>手机</li>
+				<li>手机</li>
+				<li>手机</li>
+				<li>手机</li>
+				<li>手机</li>
+				<li>手机</li>
+			</ul>
+		</div>
+		<div class="left"></div>
+		<div class="right"></div>
+		<div class="list">
+			<ul>
+				<li class="list-btn"></li>
+				<li class="list-btn"></li>
+				<li class="list-btn"></li>
+				<li class="list-btn"></li>
+				<li class="list-btn"></li>
+				<li class="list-btn"></li>
+			</ul>
+		</div>
+	</div>
+</body>
+</html>

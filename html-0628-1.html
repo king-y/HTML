@@ -1,0 +1,334 @@
+<!--
+*
+*
+* @Author: wyy
+* @Date:   2018-06-28 15:24:09
+* @Email:  2752154874@qq.com
+* @Last Modified by:   wyy
+* @Last Modified time: 2018-06-28 19:34:10
+*
+*
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="keywords" content="关联选择器,组合选择器,伪类选择器,伪对象选择器,优先级,颜色,字体,长度,背景">
+	<meta name="description" content="这是一个关于css部分功能简介的网页,包括关联选择器,组合选择器,伪类选择器,伪对象选择器,优先级,颜色,字体,长度等">
+	<title>Html-0628-1 第一遍</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- CSS Relationship Selectors Start -->
+	<hr>
+	 	<h1>关联选择器</h1>
+	 <hr>
+	 <pre>
+	 	T1,T2 代表基础选择器
+
+	 	T1   T2 {...} 		匹配T1下的所有后辈元素T2
+	 	T1 > T2 {...} 		匹配T1下的所有儿子元素T2
+	 	T1 + T2 {...} 		匹配T1后面的一个兄弟元素T2
+	 	T1 ~ T2 {...} 		匹配T1后面的所有兄弟元素T2
+
+	 </pre>
+
+	 <ul>
+	 	<li class="son">我是儿子</li>
+	 	<li>我是儿子</li>
+	 	<ol>
+	 		<li class="grandson">我是孙子</li>
+	 		<li>我是孙子</li>
+	 		<li>我是孙子</li>
+	 		<li>我是孙子</li>
+	 		<li>我是孙子</li>
+	 	</ol>
+	 	<li>我是儿子</li>
+	 </ul>
+<!-- CSS Relationship Selectors End -->
+
+	<hr>
+
+
+
+
+
+
+<!-- CSS  Composition Selectors Start -->
+		<h1>组合选择器</h1>
+	 <hr>
+	 	<pre>
+	 	作用:
+
+	 		给不同的选择器赋予同样的样式
+
+	 	格式:
+
+	 		T1,T2,T3....Tn{...}
+
+
+	 	</pre>
+	 	<p class="son">我是组合选择器-------1</p>
+	 	<p class="grandson">我是组合选择器--------2</p>
+<!-- CSS Composition Selectors End -->
+
+	<hr>
+
+
+
+<!-- CSS Pseudo-Classes Selectors Start-->
+		<h1>伪类选择器</h1>
+	 <hr>
+	 	<pre>
+ 		T1:hover{...} 		当鼠标悬停在T1上时,自动触发CSS
+ 		T1:hover{...} T2 	当鼠标悬停在T1上时,T2自动触发CSS
+
+ 		T1:focus{...} 		当鼠标获取到T1的光标时,自动触发CSS
+
+ 		T1:first-child{...} 	匹配父元素下的第一个子元素T1
+ 		T1:last-child{...} 	匹配父元素下的最后一个子元素T1
+
+ 		T1:nth-child(n){...} 	匹配父元素下的第N个子元素T1
+
+ 		T1:first-of-type{...} 	匹配父元素下子元素T1中第一个
+ 		T1:last-of-type{...} 	匹配父元素下子元素T1最后一个
+ 		T1:nth-of-type{...} 	匹配父元素下子元素T1中的第N个
+
+ 						N:数字
+ 						  单词 odd奇数 even偶数
+ 						  公式 2n
+	 	</pre>
+
+	 		<a href="#">嗯哼哼---1</a>
+	 		<a href="#">嗯哼哼---2</a>
+	 		<a href="#">嗯哼哼---3</a>
+	 		<a href="#">嗯哼哼---4</a>
+	 		<a href="#">嗯哼哼---5</a>
+
+	 		<br><br>
+
+	 	<div>
+	 		<a href="#">哈哈哈---1</a>
+	 		<a href="#">哈哈哈---2</a>
+	 		<a href="#">哈哈哈---3</a>
+	 		<a href="#">哈哈哈---4</a>
+	 		<a href="#">哈哈哈---5</a>
+	 	</div>
+			
+			<br><br>
+
+		<input type="text">
+
+			<br><br>
+
+		<dl>
+			<!-- <dt>我是标题</dt> -->
+			<dd>我是内容001</dd>
+			<dd>我是内容002</dd>
+			<dd>我是内容003</dd>
+			<dd>我是内容004</dd>
+			<dd>我是内容005</dd>
+			<dd>我是内容006</dd>
+			<dd>我是内容007</dd>
+			<dd>我是内容008</dd>
+			<dd>我是内容009</dd>
+			<dd>我是内容010</dd>
+		</dl>
+
+		<p>
+			<i>我就不斜---1</i>
+			<i>我就不斜---2</i>
+			<i>我就不斜---3</i>
+			<i>我就不斜---4</i>
+			<i>我就不斜---5</i>
+		</p>
+<!-- CSS Pseudo-Classes Selectors End -->
+
+	<hr>
+
+
+
+<!-- CSS  Pseudo-Element Selectors Start -->
+		<h1>伪对象选择器</h1>
+	 <hr>
+	 	<pre>
+
+ 		T1::before{...} 	匹配T1下子元素的最前面
+ 		T1:after{...} 		匹配T1下子元素的最后面
+
+ 		一般配合content使用
+
+ 		在未来的浮动,会使用到
+
+	 	</pre>
+			
+			<p>
+				<b>我是小可爱001号</b><br>
+				<b>我是小可爱002号</b><br>
+				<b>我是小可爱003号</b><br>
+				<b>我是小可爱004号</b><br>
+				<b>我是小可爱005号</b><br>
+				<b>我是小可爱006号</b><br>
+				<b>我是小可爱007号</b><br>
+				<b>我是小可爱008号</b><br>
+				<b>我是小可爱009号</b><br>
+				<b>我是小可爱010号</b><br>
+			</p>
+<!-- CSS Pseudo-Element Selectors End -->
+
+	<hr>
+
+
+<!-- CSS  Priority-Level Start -->
+		<h1>选择器优先级</h1>
+	 <hr>
+	 	<pre>
+	 	权重值:
+
+	 		 标签选择器:      1
+
+	 		 class选择器:     10
+
+	 		 id选择器:        100
+
+	 		 最高权重:!important   写在属性值后
+
+	 	权重越高,优先级越高
+	 	权重值相同,离标签越近的,优先级越高
+
+
+	 	继承性:
+
+	 		绝对多数的标签是继承祖辈的属性
+	 		少部分不能继承属性:
+
+	 						 a标签的颜色
+	 						 h标签的字体大小
+
+
+	 	</pre>
+
+	 	<u class="list">
+	 		<em>我是大可爱001</em>
+	 		<em>我是大可爱002</em>
+	 		<em>我是大可爱003</em>
+	 		<em>我是大可爱004</em>
+	 		<em>我是大可爱005</em>
+	 		<em>我是大可爱006</em>
+	 	</u>
+<!-- CSS Priority-Level End -->
+
+	<hr>
+
+
+<!-- CSS  Color Start -->
+		<h1>颜色</h1>
+	 <hr>
+	 	<pre>
+	 	 
+	 	 color  字体颜色
+
+	 	 		单词
+
+	 	 		#rrggbb 				六位十六进制的数组成 0-9 a-f
+
+	 	 		#rgb 				三位十六进制的数组成
+
+	 	 		rgb(n1,n2,n3)			n的取值范围0-255
+
+	 	 		rgba(n1,n2,n3,n4)		n4取值范围0-1  透明度
+
+	 	 		hsla(n1,n2,n3,n4)		n1 色调 0-360   n2 饱和度  %  n3 亮度 %  n4  透明度 0-1
+
+	 	 		opacity  透明度 0-1
+
+	 	</pre>
+	 	<strong style="color:#7f8f9f">我是王大锤,我现在慌得一笔</strong>
+	 	<strong style="color:#abc">我是王大锤,我现在慌得一笔</strong>
+	 	<strong style="color:#aabbcc">我是王大锤,我现在慌得一笔</strong>
+	 	<strong style="color:rgb(255,34,12)">下面一行帅哥才能看的到</strong>
+	 	<strong style="color:rgba(123,123,123,0);">我是王大锤,我现在慌得一笔</strong>
+	 	<strong style="color:hsla(231,34%,20%,1);">我是王大锤,我现在慌得一笔</strong>
+<!-- CSS Color End -->
+
+	<hr>
+
+
+<!-- CSS  Length Start -->
+		<h1>长度</h1>
+	 <hr>
+	 	<pre>
+	 	
+	 	相对长度		常用
+
+	 	 	%		相对于父级
+	 	 	em 		倍数,相对于周边
+	 	 	px		像素
+
+	 	 绝对长度	少
+
+	 	 	cm
+	 	 	mm
+	 	 	in		1in=25.4mm=2.54cm=96px
+	 	</pre>
+
+	 	<div><span>我就不说话,我就静静听!爱神的箭卡还是大不是记得哈四级考试暗杀教室打卡机奥斯卡大家开始大三等奖爱上爱啥啥就大喊安静的时间看到灰色的骄傲和实际到货阿大手大脚ad结婚登记卡啥都好的骄傲肯定会大数据多看!</span></div>
+<!-- CSS Length End -->
+
+	<hr>
+
+
+<!-- CSS  Font Start -->
+		<h1>字体</h1>
+	 <hr>
+	 	<pre>
+	 	
+	 	font-size:		字体大小
+	 		-family		字体家族
+	 		-style		字体风格
+	 		-weight		字体粗细		normal取消样式
+
+	 	line-height:	行高
+
+	 	简写:
+
+	 		font:size family;
+	 		font:[weight|style]  size[/line-height] family
+
+	 	</pre>
+	 	<code>
+	 		大家好,大家好,还是大家好,哈哈哈哈哈哈!
+	 	</code>
+<!-- CSS Font End -->
+
+	<hr>
+
+
+<!-- CSS  Background Start -->
+		<h1>背景</h1>
+	 <hr>
+	 	<pre>
+	 	
+	 	background-color: 	背景图片
+	 				image		背景图片
+	 				position	背景定位
+	 				repeat		背景重复
+	 				attachment	背景固定
+	 				size		背景大小
+
+	 	简写:
+	 		background:[color|image|position[/size]|repeat|attachment]
+
+	 	</pre>
+
+	 	<div class="box1"></div>
+	 	<br>
+	 	<div class="box2"></div>
+<!-- CSS Background End -->
+<hr>
+
+</body>
+</html>

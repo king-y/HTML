@@ -1,0 +1,216 @@
+/*
+* @Author: wyy
+* @Date:   2018-06-28 16:22:39
+* @Email:  2752154874@qq.com
+* @Last Modified by:   wyy
+* @Last Modified time: 2018-06-28 20:47:17
+*/
+
+
+
+
+/*标签初始化*/
+
+
+	*{
+		margin: 0;
+		padding: 0;
+	}
+
+	hr {
+		margin: 20px 0;
+	}
+
+	h1 {
+		margin: 10px;
+	}
+
+	pre {
+		color: rgb(234, 207, 20);
+		font: 16px/30px "华文仿宋","楷体";
+	}
+
+	a {
+		text-decoration: none;
+	}
+
+	div {
+		width:500px;
+		background:rgb(144,19,67,129);
+	}
+
+	i,b,em,strong {
+		font-style:normal;
+	}
+
+
+
+
+/*关联选择器*/
+
+
+	/*包含选择器*/
+
+	ul li {
+		color:rgb(197,9,104);
+	}
+
+
+	/*子选择器*/
+
+	ul>li {
+		background:rgb(114,114,181);
+	}
+
+
+	/*相邻选择器*/
+
+	.son+li {
+		color:rgb(255,255,255);
+	}
+
+
+	/*兄弟选择器*/
+
+	.grandson~li {
+		color:rgb(13,14,121);
+	}
+
+
+/*组合选择器*/
+
+	.son,.grandson {
+		background:rgb(66,66,66);
+	}
+
+
+
+/*伪类选择器*/
+
+	
+	/*hover*/
+
+	a:hover {
+		color:rgb(177,177,1);
+	}
+
+	div:hover a {
+		color:rgb(89,98,99);
+	}	
+
+	/*focus*/
+
+	input:focus {
+		border-color: rgb(56,99,0);
+	}
+	
+	/*first-child*/
+
+	dd:first-child{
+		color:rgb(255,0,0);
+	}
+
+	/*last-child*/
+
+	dd:last-child{
+		color:rgb(0,255,0);
+	}
+
+	/*nth-child(n)*/
+
+	dd:nth-child(5){
+		background: rgb(212,235,136);
+	}
+
+	/*first-of-type*/
+
+	i:first-of-type{
+		color:rgb(0,0,255);
+	}
+
+	/*last-of-type*/
+
+	i:last-of-type {
+		color:rgb(88,88,188);
+	}
+
+
+	/*nth-of-type(n)*/
+
+	i:nth-of-type(3){
+		background: rgb(234,25,136);
+	}
+
+
+/*伪对象选择器*/
+
+	/*::before*/
+
+	p::before{
+		content:"呵呵";
+	}
+
+	/*::after*/
+
+	p::after{
+		content:"吃藕丑";
+	}
+
+
+/*选择器优先级*/
+
+	
+	/* 最高权重 + 10 + 1 */
+
+	.list em {
+		color:rgb(56,255,235) !important;         
+	}
+
+	/* 1 + 1 = 2 */
+
+	u em {
+		color: rgb(100,100,188);
+	}
+
+	/* 10 + 1 = 11 */
+
+	.list em{
+		color: rgb(255,0,0);
+	}
+
+
+/*长度*/
+
+	
+	div span {
+		width: 100px;
+		height: 20px;
+	}
+
+/*字体*/
+
+	code {
+	 	font:italic 18px/20px "楷体";
+	}
+
+
+/*背景*/
+
+	.box1 {
+		width: 200px;
+		height: 200px;
+		background-color: rgb(123,132,1);
+		background-image: url(1.png);
+		background-position: 200px -200px;
+	}
+
+	.box2 {
+		width: 501px;
+    	height: 199px;
+  		background: url(1.png) 1px -200px/500px rgb(123,123,0);
+	}
+
+
+
+
+

@@ -1,0 +1,191 @@
+<!--
+*
+*
+* @Author: wyy
+* @Date:   2018-06-26 15:01:05
+* @Email:  2752154874@qq.com
+* @Last Modified by:   wyy
+* @Last Modified time: 2018-06-26 16:47:35
+*
+*
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>html-0626-1-1 多媒体部分 第一遍编码</title>
+	<style>
+		img {
+			width:100%;
+		}
+	</style>
+</head>
+<body>
+	<!-- Html img tag Start -->
+		<h1>多媒体之图片</h1>
+		<!-- img tag table start -->
+			<table border="1" cellspacing="0" cellpadding="10">
+				<tr>
+					<th>名称</th>
+					<td>img</td>
+				</tr>
+				<tr>
+					<th>类型</th>
+					<td>单标签</td>
+				</tr>
+				<tr>
+					<th rowspan="5">属性</th>
+					<td>src--->图片的来源地址</td>
+				</tr>
+				<tr>
+					<td>alt--->图片的描述内容当图片加载失败或者延迟时显示该内容</td>
+				</tr>
+				<tr>
+					<td>title--->当鼠标悬停在图片上时,显示title的内容</td>
+				</tr>
+				<tr>
+					<td>width--->宽度</td>
+				</tr>
+				<tr>
+					<td>height--->高度</td>
+				</tr>
+			</table>
+			<!-- img table End -->
+			<br>
+			<!-- Path cast Start-->
+			<table border="1" cellspacing="0" cellpadding="10">
+				<tr>
+					<th rowspan="5">路径</th>
+					<td rowspan="3">相对路径</td>
+					<td>./ 当前目录</td>
+				</tr>
+				<tr>
+					<td>../ 上一级目录</td>
+				</tr>
+				<tr>
+					<td>/ 根目录</td>
+				</tr>
+				<tr>
+					<td rowspan="2">绝对路径</td>
+					<td>网址形式</td>
+				</tr>
+				<tr>
+					<td>盘符形式</td>
+				</tr>
+			</table>
+			<!-- Path cast End -->
+
+			<!-- img  alt and title Start-->
+
+			<p><img src="1.png">这是未加描述的图片</p>
+
+			<p>这是加了描述的标签<img src="1.png" alt="我是加了title的图片"></p>
+
+			<p><img src="1.png" title="lover">这是加了title的标签</img></p>
+
+			<!-- img alt and title End -->
+
+			<!-- img width and height Start -->
+
+			<img src="1.png" width="200px" title="这是设置了宽的图片">
+			<br>
+			<img src="1.png" alt="" height="200px" title="这是设置了高的图片">
+			<br>
+			<p>图片的宽和高最好只设置一边</p>
+
+			<!-- img width and height End -->
+				
+			<!-- img path start -->
+			<img src="1.png" title="当前目录下">
+			<br>
+			<img src="../1.png" alt="" title="上一级目录下">
+			<br>
+			<img src="/1.png" alt="根目录下图片">
+			<!-- 盘符形式 -->
+			<img src="C:/Users/wy/Desktop/王洋洋/1.png" alt="这是盘符形式的图片" title="这是盘符形式的图片">
+			<!-- 网址形式 -->
+			<img src="http://i9iy.xin/xx.jpg" alt="这是网址形式的图片" title="这是网址形式的图片">
+			<!-- img path end -->
+
+		<!-- Html img tag End -->
+		<hr>
+	<!-- Html audio tag Start -->
+		<h1>多媒体之音频</h1>
+		 <!-- audio tag table start -->
+		 <table border="1" cellspacing="0" cellpadding="10">
+		 	<tr>
+		 		<th>名称</th>
+		 		<td>audio</td>
+		 	</tr>
+		 	<tr>
+		 		<th rowspan="4">属性</th>
+		 		<td>src--->音频来源地址</td>
+		 	</tr>
+		 	<tr>
+		 		<td>controls--->控制器</td>
+		 	</tr>
+		 	<tr>
+		 		<td>autoplay--->自动播放</td>
+		 	</tr>
+		 	<tr>
+		 		<td>loop--->循环播放</td>
+		 	</tr>
+		 	<tr>
+		 		<th>媒介</th>
+		 		<td>source--->用于兼容性</td>
+		 	</tr>
+		 </table>
+		 <!-- audio tag table End -->
+		
+			<!-- browers test for firefox-->
+
+		<audio src="../DJ OKAWARI - Luv Letter (情书) [mqms2].mp3" controls loop autoplay></audio>
+			<!-- 媒体兼容性 -->
+		<!-- <audio  controls loop autoplay>
+			<source src="DJ OKAWARI - Luv Letter (情书) [mqms2].mp3">
+				<source src="DJ OKAWARI - Luv Letter (情书) [mqms2].cd">
+
+		</audio> -->
+
+
+		<!-- Html audio tag End -->
+		<hr>
+	<!-- Html viedo tag Start -->
+		<h1>多媒体之视频</h1>
+		 <!-- video tag table start -->
+		 <table border="1" cellspacing="0" cellpadding="10">
+		 	<tr>
+		 		<th>名称</th>
+		 		<td>video</td>
+		 	</tr>
+		 	<tr>
+		 		<th rowspan="4">属性</th>
+		 		<td>src--->音频来源地址</td>
+		 	</tr>
+		 	<tr>
+		 		<td>controls--->控制器</td>
+		 	</tr>
+		 	<tr>
+		 		<td>autoplay--->自动播放</td>
+		 	</tr>
+		 	<tr>
+		 		<td>loop--->循环播放</td>
+		 	</tr>
+		 	<tr>
+		 		<th>媒介</th>
+		 		<td>source--->用于兼容性</td>
+		 	</tr>
+		 </table>
+		 <!-- video tag table End -->
+			<video src="../没文化真可怕.mp4" controls autoplay loop></video>
+
+			<video  controls autoplay loop>
+				<source src="../没文化真可怕.mp4">
+					<source src="../没文化真可怕.avi">
+						<source src="../没文化真可怕.rmv4">
+			</video>
+		<!-- Html viedo tag End -->
+		<hr>
+</body>
+</html>

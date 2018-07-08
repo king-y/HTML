@@ -1,0 +1,204 @@
+/*
+* @Author: wyy
+* @Date:   2018-06-29 13:05:14
+* @Email:  2752154874@qq.com
+* @Last Modified by:   wyy
+* @Last Modified time: 2018-06-29 16:40:21
+*/
+
+
+
+/* Initializer Area */
+
+
+	*{
+		margin: 0;
+		padding: 0;
+	}
+
+	hr {
+		margin: 20px 0;
+	}
+
+	h1 {
+		margin: 10px;
+	}
+
+	pre {
+		color: rgb(25, 194, 37);
+		font: 16px/30px "华文仿宋","楷体";
+	}
+
+	div {
+
+		display: block;
+		margin:10px 20px;
+	}
+
+/* border */
+
+
+	.box1 {
+		width: 200px;
+		height: 200px;
+		background: #bef;
+		border-left:2px #f0f solid;
+	}
+
+	.box2 {
+		width: 200px;
+		height: 200px;
+		background: #bef;
+		border:2px #ff0  solid ;
+	}
+	 
+	 .box3 {
+	 	width: 300px;
+	 	height: 200px;
+	 	background: #bef;
+	 	border-radius:20%;
+	 }
+
+	 table {
+	 	border-collapse:collapse;
+	 }
+
+	 input {
+	 	border:2px,#cfb;
+	 }
+
+	 input:focus {
+	 	outline:none;border-color:#bcf;
+	 }
+
+
+/* box shadow */
+
+	.box4 {
+		width: 200px;
+		height: 200px;
+		background-color: #0bf;
+		transition: all .5s;
+	}
+
+	.box4:hover {
+
+		box-shadow:10px 20px 40px #ccc;
+		transform: translate(-2px, -3px);
+
+	}
+
+
+/* list */
+
+	ul li {
+		list-style: none;
+	}
+
+
+/* text */
+
+
+	a{
+		
+		color:#ddd;
+		text-decoration: none;
+
+	}
+	a:hover {
+		color:#aab;
+		text-decoration: line-through;
+	}
+
+	textarea {
+		vertical-align:top;
+	}
+
+	.box-t1 {
+		width: 200px;
+		height: 200px;
+		border:2px #e0d solid;
+		display: table-cell;
+		text-align:center;
+		vertical-align: middle;
+	}
+
+
+	.box-t3 {
+		width: 50px;
+		height: 20px;
+		border:2px solid #ff0;
+		text-overflow:ellipsis;
+		white-space: nowrap;
+		overflow:hidden;
+	}
+
+
+	.box-t4 {
+		width: 50px;
+		height: 20px;
+		border:2px solid #ff0;
+		text-overflow:ellipsis;
+		white-space: nowrap;
+		overflow:hidden;
+	}
+
+	.box-t5 {
+		width: 50px;
+		height: 20px;
+		border:2px solid #ff0;
+		text-overflow:ellipsis;
+		white-space: nowrap;
+		overflow: hidden;
+	}
+
+
+/* overflow */
+
+	.box-o {
+		width: 90px;
+		height: 90px;
+		border:2px #f0f solid;
+		overflow: hidden;
+
+	}
+
+	.box-o1 {
+		width: 90px;
+		height: 90px;
+		border:2px #f0f solid;
+		overflow: visible;
+		white-space:nowrap;
+
+	}
+
+	.box-o2 {
+		width: 90px;
+		height: 90px;
+		border:2px #f0f solid;
+		overflow: auto;
+	}
+
+
+/* cursor */
+
+		.box-c {
+		width: 200px;
+		height: 200px;
+		background: #faf;
+		}
+
+		.box-c:hover {
+			cursor:pointer;
+		}
+
+/* iconfont */
+
+		@font-face {
+			font-family: "天真";
+			src:url(../iconfont/iconfont.ttf),url(../iconfont/iconfont.svg),url(../iconfont/iconfont.woff);
+		}
+
+		p {
+			font-family: "天真";
+		}
